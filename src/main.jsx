@@ -1,10 +1,16 @@
+'use client';
 import React from "react";
-import ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 
+const container = document.getElementById("root");
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+if (!container) {
+    throw new Error("Root container not found");
+}
+
+createRoot(container).render(
     <React.StrictMode>
-      <App />
+        <App />
     </React.StrictMode>
 );

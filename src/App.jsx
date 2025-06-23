@@ -1,3 +1,4 @@
+'use client';
 import { useEffect, useState } from "react";
 import { NewTodoForm } from "./NewTodoForm";
 import "./styles.css";
@@ -16,28 +17,25 @@ function App() {
         localStorage.setItem("ITEMS", JSON.stringify(todos));
     }, [todos]);
 
-    function addTodo(title) {
-        setTodos((currentTodos) => [
-            ...currentTodos,
+    const addTodo = (title) => {
+        setTodos((prev) => [
+            ...prev,
             { id: crypto.randomUUID(), title, completed: false },
         ]);
-    }
+    };
 
-    function toggleTodo(id, completed) {
-        setTodos((currentTodos) =>
-            currentTodos.map((todo) =>
+    const toggleTodo = (id, completed) => {
+        setTodos((prev) =>
+            prev.map((todo) =>
                 todo.id === id ? { ...todo, completed } : todo
             )
         );
-    }
+    };
 
-    function deleteTodo(id) {
-        setTodos((currentTodos) =>
-            currentTodos.filter((todo) => todo.id !== id)
-        );
-    }
+    const deleteTodo = (id) => {
+        setTodos((prev) => prev.filter((todo) => todo.id !== id));
+    };
 
-    // Set the background color directly on the body tag
     useEffect(() => {
         document.body.style.backgroundColor = backgroundColor;
     }, [backgroundColor]);
@@ -48,7 +46,11 @@ function App() {
             <div className="app-container">
                 <NewTodoForm onSubmit={addTodo} />
                 <h1 className="header">Todo List:</h1>
-                <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
+                <TodoList
+                    todos={todos}
+                    toggleTodo={toggleTodo}
+                    deleteTodo={deleteTodo}
+                />
             </div>
         </>
     );
