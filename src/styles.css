@@ -240,7 +240,7 @@ body {
 
 /* Add this to your CSS file */
 input::placeholder {
-    color: #cecece; /* Light gray */
+    color: #adadad; /* Light gray */
     opacity: 1;     /* Ensure full opacity */
 }
 
