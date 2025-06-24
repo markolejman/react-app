@@ -119,8 +119,6 @@ body {
 .list li:has(input:checked) label::before {
   width: 29px;
   height: 29px;
-  min-width: 29px;
-  min-height: 29px;
   background: #006d6d;
   border: 1px solid #9a91e1;
   color: #414551;
