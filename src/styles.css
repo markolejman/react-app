@@ -117,8 +117,8 @@ body {
 }
 
 .list li:has(input:checked) label::before {
-  width: 29px;
-  height: 29px;
+  width: 29px !important;
+  height: 29px !important;
   background: #006d6d;
   border: 1px solid #9a91e1;
   color: #414551;
@@ -143,8 +143,8 @@ body {
 
 /* Lägg till denna klass för den nya checkbox-behållaren */
 .custom-checkbox {
-  width: 29px;
-  height: 29px;
+  width: 29px !important;
+  height: 29px !important;
   border: 1px solid #000000;
   background: #F8FAFC;
   display: flex;
