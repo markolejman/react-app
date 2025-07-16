@@ -97,6 +97,8 @@ body {
   gap: 0.8rem;
   cursor: pointer;
   align-items: center;
+  flex-grow: 1;
+  word-break: break-word;
 }
 
 .list li:has(input:focus-visible) label {
@@ -112,36 +114,9 @@ body {
   position: absolute;
 }
 
-.list li label:hover::before {
-  background: #e0e4e8;
-}
+/* === FIX: Removed label::before entirely to prevent duplicate checkboxes === */
 
-.list li:has(input:checked) label::before {
-  width: 29px !important;
-  height: 29px !important;
-  background: #006d6d;
-  border: 1px solid #9a91e1;
-  color: #414551;
-  font-size: 17px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.list li:has(input:checked) label:hover::before {
-  background: #bee1e6;
-}
-
-.list li label {
-  display: flex;
-  font-size: larger;
-  gap: 0.8rem;
-  cursor: pointer;
-  align-items: center;
-}
-
-/* Lägg till denna klass för den nya checkbox-behållaren */
+/* === KEEP THIS: your real visual checkbox === */
 .custom-checkbox {
   width: 29px !important;
   height: 29px !important;
@@ -150,16 +125,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 
-/* När completed – byt bakgrund */
+/* When completed – change background */
 .completed .custom-checkbox {
   background: #E7F6FC;
   border-color: #e0e4e8;
   color: #000000;
 }
 
-/* Döljer inputen så bara ikonen syns visuellt */
+/* Hide the internal checkbox input */
 .custom-checkbox input {
   display: none;
 }
@@ -236,10 +212,9 @@ body {
   transform: rotate(57deg);
 }
 
-/* Add this to your CSS file */
 input::placeholder {
-    color: #adadad; /* Light gray */
-    opacity: 1;     /* Ensure full opacity */
+  color: #adadad;
+  opacity: 1;
 }
 
 .title {
