@@ -48,6 +48,7 @@ function App() {
                 <h1 className="header">Todo List:</h1>
                 <TodoList
                     todos={todos}
+                    setTodos={setTodos}
                     toggleTodo={toggleTodo}
                     deleteTodo={deleteTodo}
                 />
