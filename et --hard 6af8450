@@ -1,0 +1,28 @@
+[33m4bc5482[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Update drag-order for mobile layout
+[33m8fc4724[m Remove autofill in input and add drag on items to change order of todos
+[33m6af8450[m fix: gap to right on items decreased
+[33mb700344[m fix: increase gap between list items for improved spacing
+[33mad8d96a[m fix: enhance checkbox styling and layout for better usability
+[33me7c9622[m fix: styling on inputs
+[33m2aa18e2[m fix: remove unnecessary min-width and min-height from checked list item
+[33m0b8d225[m fix: correct title in index.html and add manifest link
+[33m64d4570[m fix: update placeholder color in input fields for better visibility
+[33m0335dbe[m fix: update GitHub Actions to use latest versions of checkout, setup-node, upload-artifact, and download-artifact
+[33m4b4b35a[m fix: upgrade upload-artifact to v4
+[33m2824f31[m Update to react 19 and better styling and UI
+[33m42c507a[m Update GitHub Actions workflow to use latest artifact version
+[33m4306b92[m Hide <a> element on gradient component
+[33m50573a8[m Update spinning react icon text
+[33meffee1d[m Update page title and background color
+[33m3da8e85[m Update npm dependencies and add @firecms/neat library for gradient component
+[33m34f5e62[m Add deploy workflows
+[33m70aa979[m Add whole app to right folder
+[33mf4b45f4[m Crean branch and add everything again - move everything up one folder
+[33m6d7f777[m Added CSS and react logo to page
+[33m8be528d[m Add react components and functions
+[33m12b7890[m Create more jsx files and add functions in them
+[33mb972c37[m Debug code and add functions to check todos and delete them
+[33m96be010[m Init commit after reset
+[33md888f21[m Reset project
+[33m88ea628[m Add react code to project
+[33m5132527[m Initial commit

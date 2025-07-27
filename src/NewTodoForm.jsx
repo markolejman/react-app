@@ -22,6 +22,7 @@ export function NewTodoForm({ onSubmit }) {
                     onChange={(e) => setNewItem(e.target.value)}
                     type="text"
                     id="item"
+                    autoComplete="off"
                     placeholder="What is your next task?"
                 />
             </div>
