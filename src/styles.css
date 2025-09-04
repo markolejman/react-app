@@ -1,5 +1,5 @@
 * {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   box-sizing: border-box;
 }
 
@@ -78,7 +78,7 @@ body {
 .list {
   margin: 0;
   padding: 0;
-  margin-left: 1rem;
+  margin-left: 0.25rem;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -86,9 +86,41 @@ body {
 }
 
 .list li {
+  margin-bottom: 0.5rem;
+}
+
+.todo-item {
   display: flex;
   gap: 0.3rem;
   align-items: center;
+  justify-content: space-between;
+}
+
+.todo-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+
+.drag-handle {
+  display: flex;
+  align-items: center;
+  cursor: grab;
+  color: #999;
+  padding: 0.25rem 0.25rem 0.25rem 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.drag-handle:active {
+  cursor: grabbing;
+}
+
+.drag-handle:hover {
+  color: #666;
 }
 
 .list li label {
@@ -121,7 +153,7 @@ body {
   width: 29px !important;
   height: 29px !important;
   border: 1px solid #000000;
-  background: #F8FAFC;
+  background: #f8fafc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,7 +162,7 @@ body {
 
 /* When completed – change background */
 .completed .custom-checkbox {
-  background: #E7F6FC;
+  background: #e7f6fc;
   border-color: #e0e4e8;
   color: #000000;
 }
