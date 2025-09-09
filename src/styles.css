@@ -106,13 +106,19 @@ body {
 .drag-handle {
   display: flex;
   align-items: center;
+  justify-content: center;
   cursor: grab;
   color: #999;
-  padding: 0.25rem 0.25rem 0.25rem 0;
+  padding: 0.5rem;
+  min-width: 44px; /* Minimum touch target size */
+  min-height: 44px; /* Minimum touch target size */
+  margin: -0.5rem; /* Compensate for padding to maintain layout */
+  touch-action: none; /* Prevent scrolling while dragging on touch devices */
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  transition: color 0.2s ease;
 }
 
 .drag-handle:active {

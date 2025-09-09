@@ -1,31 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo app</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="src/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon-16x16.png">
-    <link rel="manifest" href="src/images/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="src/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="src/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="src/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="src/images/site.webmanifest" />
+  </head>
 
-</head>
-
-<body>
-    <canvas id="gradientCanvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></canvas>
+  <body>
+    <canvas
+      id="gradientCanvas"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      "
+    ></canvas>
     <div id="root"></div>
     <div class="main-container">
-        <p class="title" style="font-family: 'Roboto Slab', serif;">Built with React 19</p>
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet">
-        <div class="container">
-            <span class="react-logo">
-                <span class="nucleo"></span>
-            </span>
-        </div>
+      <p class="title" style="font-family: 'Roboto Slab', serif">
+        Built with React 19
+      </p>
+      <link
+        href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap"
+        rel="stylesheet"
+      />
+      <div class="container">
+        <span class="react-logo">
+          <span class="nucleo"></span>
+        </span>
+      </div>
     </div>
 
     <script type="module" src="/src/main.jsx"></script>
-</body>
-
+  </body>
 </html>

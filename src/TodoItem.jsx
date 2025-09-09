@@ -15,7 +15,7 @@ export function TodoItem({
     <div className={`todo-item ${completed ? "completed" : ""}`}>
       <div className="todo-content">
         <span {...dragHandleProps} className="drag-handle">
-          <DragIndicatorIcon />
+          <DragIndicatorIcon sx={{ fontSize: "2rem" }} />
         </span>
         <label>
           <span className="custom-checkbox">
